@@ -15,7 +15,7 @@ export default function AddBook() {
     };
 
     axios
-      .post('http://localhost:5000/book/add', newBook) // Use '/book/add' instead of '/books/add'
+      .post('https://finalpractice-2.onrender.com/book/add', newBook) // Use '/book/add' instead of '/books/add'
       .then((res) => {
         window.location = '/';
       })
