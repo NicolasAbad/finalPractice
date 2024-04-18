@@ -26,7 +26,7 @@ export default function BookList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/book') 
+      .get('https://finalpractice-2.onrender.com/book') 
       .then((res) => {
         setBooks(res.data);
       })
