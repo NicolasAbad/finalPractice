@@ -15,7 +15,7 @@ export default function EditBook() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/book/${id}`)
+      .get(`https://finalpractice-2.onrender.com/book/${id}`)
       .then((response) => {
         setBook(response.data);
       })
@@ -35,7 +35,7 @@ export default function EditBook() {
     };
 
     axios
-      .post(`http://localhost:5000/book/update/${id}`, bookData)
+      .post(`https://finalpractice-2.onrender.com/book/update/${id}`, bookData)
       .then((res) => {
         window.location = '/';
       })
