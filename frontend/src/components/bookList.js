@@ -37,7 +37,7 @@ export default function BookList() {
 
   const deleteBook = (id) => {
     axios
-      .delete(`http://localhost:5000/book/delete/${id}`)
+      .delete(`https://finalpractice-2.onrender.com/book/delete/${id}`)
       .then((response) => {
         console.log(response.data);
       });
